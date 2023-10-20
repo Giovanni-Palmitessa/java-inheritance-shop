@@ -16,4 +16,16 @@ public class Conto {
         saldo = 0.00;
     }
 
+    //GETTER
+    public int getNumeroConto(){
+        return numeroConto;
+    }
+
+    public String getNomeCliente(){
+        return nomeCliente;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
 }
