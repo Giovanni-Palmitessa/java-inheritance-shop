@@ -28,4 +28,9 @@ public class Conto {
     public double getSaldo() {
         return saldo;
     }
+
+    //SETTER
+    public void setNomeCliente(){
+        this.nomeCliente = nomeCliente;
+    }
 }
