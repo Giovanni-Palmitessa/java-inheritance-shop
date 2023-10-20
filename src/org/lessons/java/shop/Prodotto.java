@@ -1,5 +1,7 @@
 package org.lessons.java.shop;
 
+import java.util.Random;
+
 public class Prodotto {
     //ATTRIBUTI
     private int codice;
@@ -18,7 +20,8 @@ public class Prodotto {
     }
 
     public Prodotto(int codice, String nome, String descrizione, double prezzo, int iva) {
-        this.codice = codice;
+        Random random = new Random();
+        codice = random.nextInt(1000);
         this.nome = nome;
         this.descrizione = descrizione;
         this.prezzo = prezzo;
@@ -36,5 +39,9 @@ public class Prodotto {
         return  priceIva;
     }
 
+    public String getCompleteName(){
+        String completeName = codice + nome;
+        return completeName;
+    }
 
 }
