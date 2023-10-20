@@ -11,15 +11,15 @@ public class Prodotto {
     private int iva;
 
     //COSTRUTTORI
-    public Prodotto() {
+    /*public Prodotto() {
         codice = 0;
         nome = "";
         descrizione = "";
         prezzo = 0.00;
         iva = 0;
-    }
+    }*/
 
-    public Prodotto(int codice, String nome, String descrizione, double prezzo, int iva) {
+    public Prodotto(String nome, String descrizione, double prezzo, int iva) {
         Random random = new Random();
         codice = random.nextInt(1000);
         this.nome = nome;
@@ -30,9 +30,26 @@ public class Prodotto {
 
     // METODI
 
+    //GETTER
+    public int getCodice() {
+        return codice;
+    }
+
+    public String getNome(){
+        return nome;
+    }
+
+    public String getDescrizione(){
+        return descrizione;
+    }
     public double getPrice() {
         return prezzo;
     }
+
+    public int getIva(){
+        return iva;
+    }
+
 
     public double getPriceIva() {
         double priceIva = prezzo + (1 + iva / 100.00);
