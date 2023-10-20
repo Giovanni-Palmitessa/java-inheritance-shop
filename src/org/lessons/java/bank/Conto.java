@@ -51,4 +51,8 @@ public class Conto {
         }
         return saldo;
     }
+
+    public String getFormattedCount() {
+        return "Il saldo disponibile nel conto è: " + saldo + " €";
+    }
 }
