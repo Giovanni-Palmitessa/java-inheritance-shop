@@ -17,4 +17,12 @@ public class Prodotto {
         iva = 0;
     }
 
+    public Prodotto(int codice, String nome, String descrizione, double prezzo, int iva) {
+        this.codice = codice;
+        this.nome = nome;
+        this.descrizione = descrizione;
+        this.prezzo = prezzo;
+        this.iva = iva;
+    }
+
 }
