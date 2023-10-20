@@ -25,4 +25,10 @@ public class Prodotto {
         this.iva = iva;
     }
 
+    // METODI
+
+    public double getPrice() {
+        return prezzo;
+    }
+
 }
