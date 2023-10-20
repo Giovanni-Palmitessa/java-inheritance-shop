@@ -7,4 +7,13 @@ public class Prodotto {
     private String descrizione;
     private double prezzo;
     private int iva;
+
+    //COSTRUTTORI
+    public Prodotto() {
+        codice = 0;
+        nome = "";
+        descrizione = "";
+        prezzo = 0.00;
+        iva = 0;
+    }
 }
