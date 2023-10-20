@@ -10,6 +10,9 @@ public class Bank {
         //chiedere all'utente il nome
         System.out.println("Dammi il tuo Nome e Cognome, sarai l'intestatario del Conto");
         String nomeCliente = scan.nextLine();
+        Conto conto = new Conto(nomeCliente);
+        System.out.println("Ciao " + conto.getNomeCliente() + ". Il tuo numero di conto è: "+ conto.getNumeroConto() + ". " + conto.getFormattedCount());
+
 
 
         //chiudere lo scanner
