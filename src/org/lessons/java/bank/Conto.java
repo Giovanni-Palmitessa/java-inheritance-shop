@@ -30,7 +30,7 @@ public class Conto {
     }
 
     //SETTER
-    public void setNomeCliente(){
+    public void setNomeCliente(String nomeCliente){
         this.nomeCliente = nomeCliente;
     }
 
@@ -44,10 +44,12 @@ public class Conto {
 
     // metodo per prelevare soldi al saldo
     public double preleva(double money) {
-        if (money <= saldo) {
+        if (money <= 0) {
+            System.out.println("Importo non valido.");
+        } else if (money <= saldo) {
             saldo -= money;
         } else {
-            System.out.println("Saldo insufficiente per il prelievo.");
+            return 0;
         }
         return saldo;
     }
