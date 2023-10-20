@@ -50,6 +50,21 @@ public class Prodotto {
         return iva;
     }
 
+    //SETTER
+    public void setNome(String nome){
+        this.nome = nome;
+    }
+
+    public void setDescrizione(String descrizione){
+        this.descrizione = descrizione;
+    }
+    public void setPrice(double prezzo) {
+        this.prezzo = prezzo;
+    }
+
+    public void setIva(int iva){
+        this.iva = iva;
+    }
 
     public double getPriceIva() {
         double priceIva = prezzo + (1 + iva / 100.00);
