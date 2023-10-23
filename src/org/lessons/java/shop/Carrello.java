@@ -10,6 +10,9 @@ public class Carrello {
         //istanzio lo scanner
         Scanner scan = new Scanner(System.in);
 
+        // indice per prodotti
+        int indice = 0;
+
         //Ciclo while per inserire un prodotto
         while (true) {
             System.out.println("Inserisci il tipo di prodotto (1 = Smartphone, 2 = TV, 3 = Cuffie, 0 = Esci): ");
@@ -62,6 +65,10 @@ public class Carrello {
                 System.out.println("Inserisci una scelta valida!!");
                 continue;
             }
+
+            // Aggiungi il prodotto all'array
+            carrello[indice] = prodotto;
+            indice++;
         }
     }
 }
