@@ -21,6 +21,8 @@ public class Carrello {
             //se utente sceglie di inserire prodotto farsi dare i dati
             System.out.println("Inserisci il nome del prodotto: ");
             String nome = scan.nextLine();
+            System.out.println("Inserisci la descrizione del prodotto: ");
+            String descrizione = scan.nextLine();
         }
     }
 }
