@@ -10,6 +10,13 @@ public class Carrello {
         //Ciclo while per inserire un prodotto
         while (true) {
             System.out.println("Inserisci il tipo di prodotto (1 = Smartphone, 2 = TV, 3 = Cuffie, 0 = Esci): ");
+
+            //definisco la scelta
+            int scelta = scan.nextInt();
+
+            if(scelta == 0) {
+                break;
+            }
         }
     }
 }
