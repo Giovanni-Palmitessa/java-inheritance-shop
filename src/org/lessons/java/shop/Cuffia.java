@@ -6,7 +6,7 @@ public class Cuffia extends Prodotto{
     private boolean isWired;
 
     // COSTRUTTORE
-    public Cuffia(String nome, String descrizione, double prezzo, int iva) {
+    public Cuffia(String nome, String descrizione, double prezzo, int iva, String color, boolean isWired) {
         super(nome, descrizione, prezzo, iva);
 
         this.color = color;

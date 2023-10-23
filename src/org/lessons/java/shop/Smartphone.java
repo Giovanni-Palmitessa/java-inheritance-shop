@@ -7,7 +7,7 @@ public class Smartphone extends Prodotto{
     private int storage;
 
     //COSTRUTTORE
-    public Smartphone(String nome, String descrizione, double prezzo, int iva) {
+    public Smartphone(String nome, String descrizione, double prezzo, int iva, int imeiCode, int storage) {
         super(nome, descrizione, prezzo, iva);
 
         this.imeiCode = imeiCode;
