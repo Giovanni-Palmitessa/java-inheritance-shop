@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Carrello {
     public static void main(String[] args) {
+        //array di prodotti
+        Prodotto[] carrello = new Prodotto[100];
+
         //istanzio lo scanner
         Scanner scan = new Scanner(System.in);
 
@@ -56,7 +59,8 @@ public class Carrello {
                 //istanzio il nuovo prodotto
                 prodotto = new Cuffia(nome, descrizione, prezzo, iva, color, isWired);
             } else {
-
+                System.out.println("Inserisci una scelta valida!!");
+                continue;
             }
         }
     }
