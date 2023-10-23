@@ -3,6 +3,14 @@ package org.lessons.java.shop;
 import java.util.Scanner;
 
 public class Carrello {
+    // Metodo per calcolare il totale del carrello
+    public static double calcolaTotale(Prodotto[] carrello, int indice) {
+        double totale = 0.0;
+        for (int i = 0; i < indice; i++) {
+            totale += carrello[i].getPriceIva();
+        }
+        return totale;
+    }
     public static void main(String[] args) {
         //array di prodotti
         Prodotto[] carrello = new Prodotto[100];
@@ -12,9 +20,6 @@ public class Carrello {
 
         // indice per prodotti
         int indice = 0;
-
-        //totale
-        double totale = 0.00;
 
         //Ciclo while per inserire un prodotto
         while (true) {
@@ -80,6 +85,13 @@ public class Carrello {
             System.out.println(i + 1 + " - " + carrello[i].toString());
         }
 
-        System.out.println("Totale: " + totale);
+        // Totale carrello
+        double totale = calcolaTotale(carrello, indice);
+
+        // totale con 2 cifre decimali
+        String totaleFormattato = String.format("%.2f", totale);
+
+        // Stampa il totale
+        System.out.println("Totale: " + totaleFormattato);
     }
 }

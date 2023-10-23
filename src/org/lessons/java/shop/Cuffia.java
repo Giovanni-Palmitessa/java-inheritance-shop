@@ -20,10 +20,16 @@ public class Cuffia extends Prodotto{
     public void setColor(String color) {
         this.color = color;
     }
-    public boolean isWired() {
+    public boolean getIsWired() {
         return isWired;
     }
     public void setWired(boolean wired) {
         isWired = wired;
+    }
+
+    //METODI
+    @Override
+    public String toString() {
+        return "Nome: " + getNome() + ", Descrizione: " + getDescrizione() + ", Prezzo: " + getPrice() + "€, IVA: " + getIva() + "%" + ", Colore " + getColor() + ", Cuffie cablate? " + getIsWired();
     }
 }
