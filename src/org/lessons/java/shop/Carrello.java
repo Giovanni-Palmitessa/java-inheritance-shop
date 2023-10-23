@@ -17,6 +17,10 @@ public class Carrello {
             if(scelta == 0) {
                 break;
             }
+
+            //se utente sceglie di inserire prodotto farsi dare i dati
+            System.out.println("Inserisci il nome del prodotto: ");
+            String nome = scan.nextLine();
         }
     }
 }
