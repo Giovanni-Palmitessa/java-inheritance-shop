@@ -38,6 +38,15 @@ public class Carrello {
 
                 //istanzio il nuovo prodotto
                 prodotto = new Smartphone(nome, descrizione, prezzo, iva, imeiCode, storage);
+            //scelta prodotto TV
+            } else if (scelta == 2) {
+                System.out.println("Inserisci i pollici del Televisore: ");
+                int dimension = Integer.parseInt(scan.nextLine());
+                System.out.println("La TV è di tipo SmartTv? (scrivi: true/false)");
+                boolean isSmartTv = Boolean.parseBoolean(scan.nextLine());
+
+                //istanzio il nuovo prodotto
+                prodotto = new Tv(nome, descrizione, prezzo, iva, dimension, isSmartTv);
             }
         }
     }
