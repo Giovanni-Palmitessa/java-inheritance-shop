@@ -27,6 +27,18 @@ public class Carrello {
             double prezzo = Double.parseDouble(scan.nextLine());
             System.out.println("Inserisci l'IVA del prodotto: ");
             int iva = Integer.parseInt(scan.nextLine());
+
+            Prodotto prodotto = null;
+            //scelta prodotto smartphone
+            if(scelta == 1) {
+                System.out.println("Inserisci il codice IMEI del prodotto: ");
+                int imeiCode = Integer.parseInt(scan.nextLine());
+                System.out.println("Inserisci la capacità della memoria (GigaByte): ");
+                int storage = Integer.parseInt(scan.nextLine());
+
+                //istanzio il nuovo prodotto
+                prodotto = new Smartphone(nome, descrizione, prezzo, iva, imeiCode, storage);
+            }
         }
     }
 }
