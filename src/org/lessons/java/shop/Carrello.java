@@ -77,7 +77,7 @@ public class Carrello {
         //stampare resoconto carrello
         System.out.println("Carrello:");
         for (int i = 0; i < indice; i++) {
-            System.out.println(indice + " - " + carrello[i].toString());
+            System.out.println(i + 1 + " - " + carrello[i].toString());
         }
 
         System.out.println("Totale: " + totale);
