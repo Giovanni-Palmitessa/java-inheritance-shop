@@ -12,7 +12,7 @@ public class Carrello {
             System.out.println("Inserisci il tipo di prodotto (1 = Smartphone, 2 = TV, 3 = Cuffie, 0 = Esci): ");
 
             //definisco la scelta
-            int scelta = scan.nextInt();
+            int scelta = Integer.parseInt(scan.nextLine());
 
             if(scelta == 0) {
                 break;
@@ -24,7 +24,9 @@ public class Carrello {
             System.out.println("Inserisci la descrizione del prodotto: ");
             String descrizione = scan.nextLine();
             System.out.println("Inserisci il prezzo del prodotto: ");
-            double prezzo = scan.nextDouble();
+            double prezzo = Double.parseDouble(scan.nextLine());
+            System.out.println("Inserisci l'IVA del prodotto: ");
+            int iva = Integer.parseInt(scan.nextLine());
         }
     }
 }
