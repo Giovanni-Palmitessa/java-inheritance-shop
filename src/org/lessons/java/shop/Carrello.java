@@ -23,6 +23,8 @@ public class Carrello {
             String nome = scan.nextLine();
             System.out.println("Inserisci la descrizione del prodotto: ");
             String descrizione = scan.nextLine();
+            System.out.println("Inserisci il prezzo del prodotto: ");
+            double prezzo = scan.nextDouble();
         }
     }
 }
