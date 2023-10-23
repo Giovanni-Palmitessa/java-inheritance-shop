@@ -20,10 +20,16 @@ public class Tv extends Prodotto{
     public void setDimension(int dimension) {
         this.dimension = dimension;
     }
-    public boolean isSmartTv() {
+    public boolean getIsSmartTv() {
         return isSmartTv;
     }
     public void setSmartTv(boolean smartTv) {
         isSmartTv = smartTv;
+    }
+
+    //METODI
+    @Override
+    public String toString() {
+        return "Nome: " + getNome() + ", Descrizione: " + getDescrizione() + ", Prezzo: " + getPrice() + "€, IVA: " + getIva() + "%" + ", Dimensioni in Pollici " + getDimension() + ", SmartTv? " + getIsSmartTv();
     }
 }
