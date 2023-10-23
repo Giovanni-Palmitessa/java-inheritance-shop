@@ -4,19 +4,27 @@ public class Smartphone extends Prodotto{
     // ATTRIBUTI
     private int imeiCode;
 
+    private int storage;
+
     //COSTRUTTORE
     public Smartphone(String nome, String descrizione, double prezzo, int iva) {
         super(nome, descrizione, prezzo, iva);
 
         this.imeiCode = imeiCode;
+        this.storage = storage;
     }
 
     //GETTER E SETTER
     public int getImeiCode() {
         return imeiCode;
     }
-
+    public int getStorage() {
+        return storage;
+    }
     public void setImeiCode(int imeiCode) {
         this.imeiCode = imeiCode;
+    }
+    public void setStorage(int storage) {
+        this.storage = storage;
     }
 }
