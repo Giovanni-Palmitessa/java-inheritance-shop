@@ -5,10 +5,25 @@ public class Tv extends Prodotto{
     private int dimension;
     private boolean isSmartTv;
 
+    //COSTRUTTORE
     public Tv(String nome, String descrizione, double prezzo, int iva) {
         super(nome, descrizione, prezzo, iva);
+
+        this.dimension = dimension;
+        this.isSmartTv = isSmartTv;
     }
 
-    //COSTRUTTORE
-
+    //GETTER E SETTER
+    public int getDimension() {
+        return dimension;
+    }
+    public void setDimension(int dimension) {
+        this.dimension = dimension;
+    }
+    public boolean isSmartTv() {
+        return isSmartTv;
+    }
+    public void setSmartTv(boolean smartTv) {
+        isSmartTv = smartTv;
+    }
 }
