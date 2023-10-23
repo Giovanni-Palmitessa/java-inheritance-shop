@@ -47,6 +47,16 @@ public class Carrello {
 
                 //istanzio il nuovo prodotto
                 prodotto = new Tv(nome, descrizione, prezzo, iva, dimension, isSmartTv);
+            } else if (scelta == 3) {
+                System.out.println("Inserisci il colore delle cuffie: ");
+                String color = scan.nextLine();
+                System.out.println("Le cuffie sono di tipo cablato? (scrivi: true/false)");
+                boolean isWired = Boolean.parseBoolean(scan.nextLine());
+
+                //istanzio il nuovo prodotto
+                prodotto = new Cuffia(nome, descrizione, prezzo, iva, color, isWired);
+            } else {
+
             }
         }
     }
