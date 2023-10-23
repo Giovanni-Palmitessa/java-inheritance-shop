@@ -27,4 +27,11 @@ public class Smartphone extends Prodotto{
     public void setStorage(int storage) {
         this.storage = storage;
     }
+
+    //METODI
+    @Override
+    public String toString() {
+        return "Nome: " + getNome() + ", Descrizione: " + getDescrizione() + ", Prezzo: " + getPrice() + "€, IVA: " + getIva() + "%" + ", IMEI Code: " + getImeiCode() + ", Memoria: " + getStorage();
+    }
+
 }
