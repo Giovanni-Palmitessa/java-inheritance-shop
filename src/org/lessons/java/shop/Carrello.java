@@ -13,6 +13,9 @@ public class Carrello {
         // indice per prodotti
         int indice = 0;
 
+        //totale
+        double totale = 0.00;
+
         //Ciclo while per inserire un prodotto
         while (true) {
             System.out.println("Inserisci il tipo di prodotto (1 = Smartphone, 2 = TV, 3 = Cuffie, 0 = Esci): ");
@@ -70,5 +73,6 @@ public class Carrello {
             carrello[indice] = prodotto;
             indice++;
         }
+
     }
 }
