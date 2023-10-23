@@ -74,5 +74,12 @@ public class Carrello {
             indice++;
         }
 
+        //stampare resoconto carrello
+        System.out.println("Carrello:");
+        for (int i = 0; i < indice; i++) {
+            System.out.println(carrello[i]);
+        }
+
+        System.out.println("Totale: " + totale);
     }
 }
